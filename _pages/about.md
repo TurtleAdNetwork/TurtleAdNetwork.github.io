@@ -6,7 +6,7 @@ permalink: /about/
 
 The Turtle Ad Network is a Peer-to-Peer Ad Network that is simple, fast and open source.
 
-The Ad Network is a Wordpress plugin used for managing and hosting Ads.<br/>
+The Ad Network utilizes a Wordpress plugin used for managing and hosting Ads.<br/>
 The Ad Network utilizes the Turtle Network blockchain for sending and purchasing Ads, directly from the [Wallet](https://wallet.turtlenetwork.eu), in one simple step.
 
 **Live Example:** [Advertise on turtlenetwork.eu](https://www.turtlenetwork.eu/advertise) <br/>
