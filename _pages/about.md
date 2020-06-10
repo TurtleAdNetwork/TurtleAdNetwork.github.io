@@ -4,26 +4,23 @@ title: About
 permalink: /about/
 ---
 
-[Reverie](https://github.com/amitmerchant1990/reverie) is a Jekyll theme which is simple and opinionated. It's actually a fork of [jekyll-now](https://github.com/barryclark/jekyll-now) with some additional features and personal touches which I've implemented to suit my needs for [my blog](https://www.amitmerchant.com).
+The Turtle Ad Network is a Peer-to-Peer Ad Network that is simple, fast and open sourced.
 
-This is a plug-and-play Jekyll theme which you can use on GitHub Pages without even setting up a local environment.
+The Ad Network is a Wordpress plugin used for managing and hosting Ads.
+The Ad Network utilizes the Turtle Network blockchain for sending and paying for Ads, directly from the [Wallet](https://wallet.turtlenetwork.eu), in one simple step.
+
+Live Example: https://www.turtlenetwork.eu/advertise
 
 ## Features
 
-- Command-line free fork-first workflow, using GitHub.com to create, customize and post to your blog
-- Fully responsive and mobile optimized base theme
-- Sass/Coffeescript support using Jekyll 2.0
-- Free hosting on your GitHub Pages user site
-- All the SEO goodies comes in-built
-- Markdown blogging
-- Syntax highlighting using Pygments
-    - [Dracula syntax theme](https://draculatheme.com/) included
-- Disqus commenting
-- Google Analytics integration
-- Fuzzy search across blog posts
-- Pagination of posts works out-of-the-box.
-- Categorize posts out-of-the box
-- RSS Feed
-- In-built sitemap
+- Text Ad Network
+- Peer-to-Peer transactions
+- TANstats – Ad statistics & monitoring
+- Ad payments in TrueUSD (tUSD) or $TN (Receive 100%, no middlemen)
+- Send Ad text and payment in one easy transaction
+- Blacklist, Spam Management, Ad Stop|Start
+- Auto or manual Ad Approval
+- 0.02 $TN transaction fee per Ad
+- Zero license costs
 
-Learn more about it [here](https://github.com/amitmerchant1990/reverie) on how to get started.
+Wordpress plugin: Install & Learn more about it [here](https://wordpress.org/plugins/turtle-ad-network) on how to get started.
