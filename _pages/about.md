@@ -11,7 +11,6 @@ The Ad Network utilizes the Turtle Network blockchain for sending and purchasing
 
 **Live Example:** [Advertise on turtlenetwork.eu](https://www.turtlenetwork.eu/advertise) <br/>
 **Ask a Question or just want to chat?:** [Telegram Group](https://t.me/turtleadnetwork)
-
 **Wordpress plugin:** Install & Learn more about TAN [here](https://wordpress.org/plugins/turtle-ad-network) and how to get started.
 
 ## Features
