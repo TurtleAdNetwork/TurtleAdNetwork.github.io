@@ -11,6 +11,6 @@ I created a new Organization and [Repository](https://github.com/TurtleAdNetwork
 
 > Thanks to the Reverie team for a truely elegant theme
 
-Next steps to customize was editing the _config.yml file for all default site names and values. This led me to configur a [Custom URL using this guide](https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site) so i could point my domain name 'turtleadnetwork.com to the repo. Follwed the simple steps, logged a call with the ISP to create a CNAME, waited for DNS to sync - Fertig.
+Next steps to customize was editing the _config.yml file for all default site names and values. This led me to configur a [Custom URL using this guide](https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site) so i could point my domain name 'turtleadnetwork.com' to the repo. Followed the simple steps, logged a call with the ISP to create a CNAME in DNS (I didn't have access), waited for DNS to sync - Fertig.
 
 Further steps (Work-In-Progress) were really about customizing the site, removing default posts and now trying to write content. 
