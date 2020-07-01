@@ -63,22 +63,30 @@ $(document).ready(function () {
 
 
     async function init() {
-        return TurtleShell.initialPromise
-            .then((keeperApi) => {
-                return keeperApi.publicState().then(state => {
-                    console.log(state); //displaying the result in the console
-                    if (state !== null && state.account !== null) {
-                        if( state.network.code !== "L") {
-                            alert("It seems you aren't logged into mainnet, please do so. \nAfter this refresh the webpage.")
+        if (checkKeeper()) {
+            return TurtleShell.initialPromise
+                .then((keeperApi) => {
+                    return keeperApi.publicState().then(state => {
+                        console.log(state); //displaying the result in the console
+                        if (state !== null && state.account !== null) {
+                            if (state.network.code !== "L") {
+                                alert("It seems you aren't logged into mainnet, please do so. \nAfter this refresh the webpage.")
+                            }
+                            return state;
                         }
-                        return state;
-                    }
-                    alert("We couldn't load an account, check if an account is set and whitelist this website. \nAfter this refresh the webpage.")
+                        alert("We couldn't load an account, check if an account is set and whitelist this website. \nAfter this refresh the webpage.")
 
 
-                }).catch(error => {
-                    console.error(error); // displaying the result in the console
+                    }).catch(error => {
+                        console.error(error); // displaying the result in the console
+                    });
                 });
-            });
+        }else{
+            alert('Please, install TurtleShell. And configure an account!');
+        }
+    }
+
+    function checkKeeper() {
+        return typeof window.TurtleShell !== 'undefined';
     }
 });
