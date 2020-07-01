@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ad
+title: Submit an Ad (Testing)
 permalink: /ad/
 ---
 <html lang="en">
