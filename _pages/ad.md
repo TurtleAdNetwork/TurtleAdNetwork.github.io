@@ -3,7 +3,7 @@ layout: page
 title: Ad
 permalink: /ad/
 ---
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
