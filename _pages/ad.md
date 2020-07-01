@@ -3,7 +3,6 @@ layout: page
 title: Ad
 permalink: /ad/
 ---
-```html
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,4 +43,3 @@ permalink: /ad/
 </form>
 </body>
 </html>
-```
