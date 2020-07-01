@@ -9,7 +9,7 @@ permalink: /ad/
     <meta charset="UTF-8">
     <title>Create an add</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="process.js"></script>
+    <script src="https://github.com/TurtleAdNetwork/TurtleAdNetwork.github.io/blob/master/_pages/process.js"></script>
 </head>
 <body>
 <form>
