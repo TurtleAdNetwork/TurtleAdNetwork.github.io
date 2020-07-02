@@ -5,12 +5,13 @@ $(document).ready(function () {
         address: '3Jqn2aKeYn59UNJue9qy9poHZH16HhZ6LFp',
         currency: 'TN',
         price: '100000000',
-        assetId: '',
+        assetId: 'TN',
         digits: '8',
         amountImpressions: '50'
     }
     ];
     var totalMessageString ="";
+    var totalPriceInt=0;
 
     for (const website of websites) {
         $('#websites').append($(document.createElement('option')).prop({
@@ -48,13 +49,14 @@ $(document).ready(function () {
     });
 
     function totalPrice() {
-        $('#price').val(websites[$('#websites').children("option:selected").val()].price/ Math.pow(10,websites[$('#websites').children("option:selected").val()].digits));
-        $('#totalprice').val(
-            websites[$('#websites').children("option:selected").val()].price
+        $('#price').val(websites[$('#websites').children("option:selected").val()].price/ Math.pow(10,websites[$('#websites').children("option:selected").val()].digits)
+            / websites[$('#websites').children("option:selected").val()].amountImpressions);
+        totalPriceInt=             websites[$('#websites').children("option:selected").val()].price
             / websites[$('#websites').children("option:selected").val()].amountImpressions
             * $('#impressions').val()
-            / Math.pow(10,websites[$('#websites').children("option:selected").val()].digits)
-        );
+            / Math.pow(10,websites[$('#websites').children("option:selected").val()].digits);
+        $('#totalprice').val(totalPriceInt);
+
     }
 
     function totalMessage() {
@@ -76,7 +78,7 @@ $(document).ready(function () {
                 .then((keeperApi) => {
                     return keeperApi.publicState().then(state => {
                         console.log(state); //displaying the result in the console
-                        if (state !== null && state.account !== null) {
+                        if (state !== null && state.account !== null && state.locked !== false) {
                             if (state.network.code !== "L") {
                                 alert("It seems you aren't logged into mainnet, please do so. \nAfter this refresh the webpage.")
                             }
@@ -96,5 +98,33 @@ $(document).ready(function () {
 
     function checkKeeper() {
         return typeof window.TurtleShell !== 'undefined';
+    }
+
+    $("#btnSubmit").click(function(){
+        sendTx(websites[$('#websites').children("option:selected").val()].assetId,
+            totalPriceInt,
+            websites[$('#websites').children("option:selected").val()].address)
+    });
+
+    async function sendTx(assetId, tokens, recipient){
+        const txData = {
+            type: 4,
+            data: {
+                amount: {
+                    assetId: assetId,
+                    tokens: tokens
+                },
+                fee: {
+                    assetId: "TN",
+                    tokens: "0.02"
+                },
+                recipient: recipient
+            }
+        };
+        TurtleShell.signAndPublishTransaction(txData).then((data) => {
+            console.log(data)
+        }).catch((error) => {
+            console.log(error)
+        });
     }
 });
