@@ -103,10 +103,11 @@ $(document).ready(function () {
     $("#btnSubmit").click(function(){
         sendTx(websites[$('#websites').children("option:selected").val()].assetId,
             totalPriceInt,
-            websites[$('#websites').children("option:selected").val()].address)
+            websites[$('#websites').children("option:selected").val()].address,
+            totalMessageString)
     });
 
-    async function sendTx(assetId, tokens, recipient){
+    async function sendTx(assetId, tokens, recipient, attachment){
         const txData = {
             type: 4,
             data: {
@@ -118,7 +119,8 @@ $(document).ready(function () {
                     assetId: "TN",
                     tokens: "0.02"
                 },
-                recipient: recipient
+                recipient: recipient,
+                attachment: attachment
             }
         };
         TurtleShell.signAndPublishTransaction(txData).then((data) => {
