@@ -5,9 +5,12 @@ $(document).ready(function () {
         address: '3Jqn2aKeYn59UNJue9qy9poHZH16HhZ6LFp',
         currency: 'TN',
         price: '100000000',
+        assetId: '',
+        digits: '8',
         amountImpressions: '50'
     }
     ];
+    var totalMessageString ="";
 
     for (const website of websites) {
         $('#websites').append($(document.createElement('option')).prop({
@@ -45,20 +48,25 @@ $(document).ready(function () {
     });
 
     function totalPrice() {
-        $('#price').val(websites[$('#websites').children("option:selected").val()].price);
+        $('#price').val(websites[$('#websites').children("option:selected").val()].price/ Math.pow(10,websites[$('#websites').children("option:selected").val()].digits));
         $('#totalprice').val(
             websites[$('#websites').children("option:selected").val()].price
             / websites[$('#websites').children("option:selected").val()].amountImpressions
-            * $('#impressions').val());
+            * $('#impressions').val()
+            / Math.pow(10,websites[$('#websites').children("option:selected").val()].digits)
+        );
     }
 
     function totalMessage() {
         var headline = $('#headlineInput').val();
         var description = $('#descriptionInput').val();
         var url = $('#urlInput').val();
-        var total = "Ad (" + headline + ")(" + description + ")(" + url + ")";
-        $('#totalInput').attr('size', total.length);
-        $('#totalInput').val(total);
+        totalMessageString = "Ad (" + headline + ")(" + description + ")(" + url + ")";
+        $('#totalInput').attr('size', totalMessageString.length);
+        $('#totalInput').val(totalMessageString);
+        if( totalMessageString.length> 140){
+            alert('Please either reduce your ad url, Headline or the Description. It becomes to long.')
+        }
     }
 
 
