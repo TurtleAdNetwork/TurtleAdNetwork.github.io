@@ -29,17 +29,17 @@ permalink: /ad/
     <input type="number" name="totalprice" id="totalprice" disabled>
     <input class="priceCurrency" disabled>
     <br>
-    <label for="headlineInput">Headline</label>
+    <label for="headlineInput">Ad Headline</label>
     <input name="headlineInput" id="headlineInput" maxlength="35">
     <br>
-    <label for="descriptionInput">Description</label>
+    <label for="descriptionInput">Ad Description</label>
     <input name="descriptionInput" id="descriptionInput" maxlength="115">
     <br>
-    <label for="urlInput">Url</label>
+    <label for="urlInput">Ad Url</label>
     <input type="url" name="urlInput" id="urlInput" maxlength="115">
     <br>
-    <label for="totalInput">Total message</label>
-    <input name="totalInput" id="totalInput" disabled width="150">
+    <label for="totalInput">Full Ad</label>
+    <input name="totalInput" id="totalInput" maxlength="140" disabled width="150">
 </form>
 </body>
 </html>
