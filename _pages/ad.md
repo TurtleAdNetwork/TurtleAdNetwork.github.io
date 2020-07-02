@@ -40,6 +40,8 @@ permalink: /ad/
     <br>
     <label for="totalInput">Full Ad</label>
     <input name="totalInput" id="totalInput" maxlength="140" disabled width="150">
+    <br>
+    <input id="btnSubmit"  type="button" value="Post Advertisement"/>
 </form>
 </body>
 </html>
