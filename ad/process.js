@@ -80,11 +80,11 @@ $(document).ready(function () {
                         console.log(state); //displaying the result in the console
                         if (state !== null && state.account !== null && state.locked !== false) {
                             if (state.network.code !== "L") {
-                                alert("It seems you aren't logged into mainnet, please do so. \nAfter this refresh the webpage.")
+                                alert("It seems you aren't logged into MainNet on TurtleShell, please do so. \nAfter changes pls refresh the webpage.")
                             }
                             return state;
                         }
-                        alert("We couldn't load an account, check if an account is set and whitelist this website. \nAfter this refresh the webpage.")
+                        alert("We couldn't load a TurtleShell account, pls check if an account is created & logged-on. Whitelist this website. \nAfter changes pls refresh the webpage.")
 
 
                     }).catch(error => {
@@ -92,7 +92,7 @@ $(document).ready(function () {
                     });
                 });
         }else{
-            alert('Please, install TurtleShell. And configure an account!');
+            alert('Please install TurtleShell and configure an account!');
         }
     }
 
