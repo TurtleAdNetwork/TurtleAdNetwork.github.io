@@ -1,7 +1,9 @@
 ---
 layout: page
-title: Submit an Ad (Testing)
+title: Submit an Ad
 permalink: /ad/
+note: TurtleShell web extension will be required to Pay & Send the Ad.
+<a href="https://addons.mozilla.org/en-US/firefox/addon/turtleshell/">Download: TurtleShell on FireFox</a>
 ---
 <html lang="en">
 <head>
