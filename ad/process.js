@@ -8,7 +8,7 @@ $(document).ready(function () {
         assetId: 'TN',
         digits: '8',
         amountImpressions: '50'
-    }
+    },
     {
         index: 1,
         website: 'RapydBlok.com',
