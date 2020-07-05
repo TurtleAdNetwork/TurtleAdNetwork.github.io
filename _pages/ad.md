@@ -26,11 +26,11 @@ permalink: /ad/
     <br>
     <label for="price">Price/impression</label>
     <input type="number" name="price" id="price" disabled>
-    <input class="priceCurrency" disabled>
+    <input class="priceCurrency" size="5%" disabled>
     <br>
     <label for="totalprice" id="totalpricelabel">Total price</label>
     <input type="number" name="totalprice" id="totalprice" disabled>
-    <input class="priceCurrency" disabled>
+    <input class="priceCurrency" size="5%" disabled>
     <br>
     <label for="headlineInput">Ad Headline</label>
     <input name="headlineInput" id="headlineInput" maxlength="35">
@@ -39,7 +39,7 @@ permalink: /ad/
     <input name="descriptionInput" id="descriptionInput" size="45%" maxlength="115">
     <br>
     <label for="urlInput">Ad Url</label>
-    <input type="url" name="urlInput" id="urlInput" maxlength="115">
+    <input type="url" name="urlInput" id="urlInput" size="30%" maxlength="115">
     <br>
     <label for="totalInput">Full Ad</label>
     <input name="totalInput" id="totalInput" maxlength="140" disabled width="150">
