@@ -21,7 +21,7 @@ permalink: /ad/
 
     </select>
     <br>
-    <label for="impressions">Choose the amount off impressions</label>
+    <label for="impressions">Choose the amount of impressions</label>
     <input type="number" name="impressions" id="impressions" step="100" min="0">
     <br>
     <label for="price">Price/impression</label>
@@ -36,7 +36,7 @@ permalink: /ad/
     <input name="headlineInput" id="headlineInput" maxlength="35">
     <br>
     <label for="descriptionInput">Ad Description</label>
-    <input name="descriptionInput" id="descriptionInput" maxlength="115">
+    <input name="descriptionInput" id="descriptionInput" size="45%" maxlength="115">
     <br>
     <label for="urlInput">Ad Url</label>
     <input type="url" name="urlInput" id="urlInput" maxlength="115">
