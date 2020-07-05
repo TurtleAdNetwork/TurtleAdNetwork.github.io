@@ -9,6 +9,16 @@ $(document).ready(function () {
         digits: '8',
         amountImpressions: '50'
     }
+    {
+        index: 1,
+        website: 'RapydBlok.com',
+        address: '3Jhhq39fSg6y44EDSf8xprHGWaKfdphBjbR',
+        currency: 'TN',
+        price: '100000000',
+        assetId: 'TN',
+        digits: '8',
+        amountImpressions: '25'
+    }
     ];
     var totalMessageString ="";
     var totalPriceInt=0;
