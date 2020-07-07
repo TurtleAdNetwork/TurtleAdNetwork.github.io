@@ -25,10 +25,10 @@ Now imagine removing the middlemen, costs and data mining… <br>
 -	Easy setup.
 -	Pay for Ads in True USD (tUSD), digital version of USD, or $TN.
 -	Monitor Ad statistics.
--	Submit Ads via an easy customizable frontend like https://www.turtleadnetwork.com/ad/ or via the web wallet.
+-	Submit Ads via an easy customizable frontend like <a href="https://www.turtleadnetwork.com/ad/">turtleadnetwork.com/ad/</a> or via the web wallet.
 -	Customizable plugin, fork the code.
 
 **Social Media**
-**Web:** https://www.turtleadnetwork.com <br>
-**Plugin:** https://wordpress.org/plugins/turtle-ad-network <br>
-**Web Form:** https://github.com/TurtleAdNetwork/TAN_WebForm
+**Web:** <a href="https://www.turtleadnetwork.com">turtleadnetwork.com</a> <br>
+**Plugin:** <a href="https://wordpress.org/plugins/turtle-ad-network">Turtle Ad Network Plugin</a> <br>
+**Web Form:** <a href="https://github.com/TurtleAdNetwork/TAN_WebForm">Customizable Web Form</a>
