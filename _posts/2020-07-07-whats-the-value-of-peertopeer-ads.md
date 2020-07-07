@@ -9,7 +9,7 @@ Step into the current ages where large free platforms/corporations, that own use
 
 Now imagine removing the middlemen, costs and data mining… <br>
 
-#### P2P advertisements are competitive, and here is why;
+**P2P advertisements are competitive, and here is why;**
 -	Ad Payments: Receive 100% of payment.
 -	Ad management: Website owner has direct full control of the management of ads.<br>
 
