@@ -2,7 +2,7 @@
 layout: post
 title:  What's the value of peer-to-peer Ads?
 categories: [Insight]
-excerpt: #### Great question! Let's look into the value proposition of P2P Ads.
+excerpt: Great question! Let's look into the value proposition of P2P Ads.
 ---
 The peer-to-peer (P2P) concept became popular around the year 2000, music-sharing was a big craze with the likes of Napster. P2P allowed users to connect directly to a service without an intermediary or client-server model. <br>
 Step into the current ages where large free platforms/corporations, that own user’s data, compete for advertising revenue and are essentially middlemen that receive fees for all transactions. Those corporations mostly dominate both the user data, fee and Ad market.<br>
