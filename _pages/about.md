@@ -26,3 +26,5 @@ The Ad Network utilizes the Turtle Network blockchain for sending and purchasing
 - Multi-Ad support, Auto Rotate
 - 0.02 $TN transaction fee per Ad
 - Zero license costs
+
+<iframe style="border: none;" src="https://cards.producthunt.com/cards/posts/178512?v=1" width="500" height="405" frameborder="0" scrolling="no" allowfullscreen></iframe>
