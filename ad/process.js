@@ -8,6 +8,7 @@ $(document).ready(function () {
         assetId: 'TN',
         digits: '8',
         amountImpressions: '50'
+        }
     ];
     var totalMessageString ="";
     var totalPriceInt=0;
