@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(window).on("load", function(){
     let websites = [{
         index: 0,
         website: 'TurtleNetwork.eu',
@@ -8,21 +8,18 @@ $(document).ready(function () {
         assetId: 'TN',
         digits: '8',
         amountImpressions: '50'
-        }
+    }    
     ];
-    var totalMessageString ="";
-    var totalPriceInt=0;
-
     for (const website of websites) {
         $('#websites').append($(document.createElement('option')).prop({
             value: website.index,
             text: website.website
         }))
     }
+    var totalMessageString ="";
+    var totalPriceInt=0;
 
-    init().then((value) => {
-        console.log('Init completed!')
-    });
+
 
     $("#websites").prop("selectedIndex", -1);
 
@@ -78,7 +75,7 @@ $(document).ready(function () {
                 .then((keeperApi) => {
                     return keeperApi.publicState().then(state => {
                         console.log(state); //displaying the result in the console
-                        if (state !== null && state.account !== null && state.locked !== false) {
+                        if (state !== null && state.account !== null && state.locked === false) {
                             if (state.network.code !== "L") {
                                 alert("It seems you aren't logged into MainNet on TurtleShell, please do so. \nAfter changes pls refresh the webpage.")
                             }
@@ -129,4 +126,8 @@ $(document).ready(function () {
             console.log(error)
         });
     }
+
+    init().then((value) => {
+        console.log('Init completed!')
+    });
 });
