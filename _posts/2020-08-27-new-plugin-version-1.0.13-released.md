@@ -13,6 +13,8 @@ NOTE: - Previous ads will also run again, you can stop them or create a new Wall
 
 A minor change was renaming two buttons in 'Wallet Address & 'Ad Segments' sections.
 
+**Install:** [Install plugin from Wordpress.org](https://wordpress.org/plugins/turtle-ad-network)
+
 **1.0.13** <br>
 [Change]: DB tables renamed to standards, backup address & ad segment settings prior.<br>
 [Review]: Wordpress 5.5 support confirmed.<br>
