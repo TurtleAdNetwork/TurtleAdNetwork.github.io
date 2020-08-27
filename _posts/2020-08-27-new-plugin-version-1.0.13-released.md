@@ -11,9 +11,9 @@ The most important change was to the database tables (DB) structure, to include 
 NOTE: - Pls make sure to save your wallet address and Ad Segment information before updating, as it will be lost.<br>
 NOTE: - Previous ads will also run again, you can stop them or create a new Wallet Address.
 
-A minor change was renaming two buttons in 'Wallet Address & 'Ad Sedments' sections.
+A minor change was renaming two buttons in 'Wallet Address & 'Ad Segments' sections.
 
-**1.0.13**
+**1.0.13** <br>
 [Change]: DB tables renamed to standards, backup address & ad segment settings prior.<br>
 [Review]: Wordpress 5.5 support confirmed.<br>
 [Change]: Create buttons renamed.<br>
