@@ -13,7 +13,7 @@ NOTE: - Previous ads will also run again, you can stop them or create a new Wall
 
 A minor change was renaming two buttons in 'Wallet Address & 'Ad Sedments' sections.
 
-= 1.0.13 =
-[Change]: DB tables renamed to standards, backup address & ad segment settings prior.
-[Review]: Wordpress 5.5 support confirmed.
-[Change]: Create buttons renamed.
+**1.0.13**
+[Change]: DB tables renamed to standards, backup address & ad segment settings prior.<br>
+[Review]: Wordpress 5.5 support confirmed.<br>
+[Change]: Create buttons renamed.<br>
