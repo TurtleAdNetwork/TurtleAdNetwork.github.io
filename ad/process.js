@@ -2,7 +2,7 @@ $(window).on("load", function(){
     let websites = [{
         index: 0,
         website: 'TurtleNetwork.eu',
-        address: '3Jqn2aKeYn59UNJue9qy9poHZH16HhZ6LFp',
+        address: '3Ju3S5GL9ytbes8gpFHLbAdDjji9AFSVzUX',
         currency: 'TN',
         price: '100000000',
         assetId: 'TN',
